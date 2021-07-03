@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol Problem { var rightAnswer: String { get } }
+protocol Problem {
+    var rightAnswer: String { get }
+}
