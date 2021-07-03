@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='MathForFunUITests.xctest' tests='2' failures='0'>
+  <testsuite name='MathForFunTests.GameModelTests' tests='1' failures='0'>
+    <testcase classname='MathForFunTests.GameModelTests' name='test_WhenGameSessionIsCreated_GameLevelShouldBe1' time='0.002'/>
+  </testsuite>
+  <testsuite name='MathForFunUITests.MathForFunUITests' tests='1' failures='0'>
+    <testcase classname='MathForFunUITests.MathForFunUITests' name='testExample' time='1.639'/>
+  </testsuite>
+</testsuites>
