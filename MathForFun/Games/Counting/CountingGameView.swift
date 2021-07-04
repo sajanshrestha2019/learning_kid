@@ -79,12 +79,14 @@ struct QuestionView: View {
     var body: some View {
         let emojis = (1...countingProblem.emojiCount).map { Emoji(id: $0, emojiString: countingProblem.emoji) }
         
-        return LazyVGrid(columns: columns, content: {
-            ForEach(emojis) { emoji in
-                CardView(title: emoji.emojiString)
-                    .frame(height: 60)
+        return ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(emojis) { emoji in
+                    CardView(title: emoji.emojiString)
+                        .aspectRatio(2/3, contentMode: .fit)
+                }
             }
-        })
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B3BA6D26924E11006987B1 /* GameSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B3BA6C26924E11006987B1 /* GameSessionTests.swift */; };
 		A1089B7324AE90C400C70A83 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1089B7224AE90C400C70A83 /* DispatchQueue.swift */; };
 		A1089B7524AEB3B900C70A83 /* UserDefaults + extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1089B7424AEB3B900C70A83 /* UserDefaults + extensions.swift */; };
 		A109520E248B2EF100234225 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109520D248B2EF100234225 /* GameModel.swift */; };
@@ -42,7 +43,6 @@
 		A137C27124883D9D00BEC96D /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137C27024883D9D00BEC96D /* GameView.swift */; };
 		A13B0A822502AF140004F2D9 /* IdentifyingObjectsGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B0A812502AF140004F2D9 /* IdentifyingObjectsGameView.swift */; };
 		A13B0A842502FE310004F2D9 /* hedghog_swimmer.json in Resources */ = {isa = PBXBuildFile; fileRef = A13B0A832502FE310004F2D9 /* hedghog_swimmer.json */; };
-		A13EA41D262CDF0600884CF8 /* GameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA41C262CDF0600884CF8 /* GameModelTests.swift */; };
 		A13F16F024D6F6EE009078C4 /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F16EF24D6F6EE009078C4 /* ImageButton.swift */; };
 		A13F16F224D6FA5B009078C4 /* Positions.json in Resources */ = {isa = PBXBuildFile; fileRef = A13F16F124D6FA5B009078C4 /* Positions.json */; };
 		A13F16F424D6FBE5009078C4 /* Identifying Shapes.json in Resources */ = {isa = PBXBuildFile; fileRef = A13F16F324D6FBE5009078C4 /* Identifying Shapes.json */; };
@@ -110,6 +110,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02B3BA6C26924E11006987B1 /* GameSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTests.swift; sourceTree = "<group>"; };
 		A101E0D224983D3F00C2D8EF /* Noteworthy.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Noteworthy.ttc; sourceTree = "<group>"; };
 		A1089B7224AE90C400C70A83 /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		A1089B7424AEB3B900C70A83 /* UserDefaults + extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + extensions.swift"; sourceTree = "<group>"; };
@@ -152,7 +153,6 @@
 		A137C27024883D9D00BEC96D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A13B0A812502AF140004F2D9 /* IdentifyingObjectsGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjectsGameView.swift; sourceTree = "<group>"; };
 		A13B0A832502FE310004F2D9 /* hedghog_swimmer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hedghog_swimmer.json; sourceTree = "<group>"; };
-		A13EA41C262CDF0600884CF8 /* GameModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelTests.swift; sourceTree = "<group>"; };
 		A13F16EF24D6F6EE009078C4 /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
 		A13F16F124D6FA5B009078C4 /* Positions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Positions.json; sourceTree = "<group>"; };
 		A13F16F324D6FBE5009078C4 /* Identifying Shapes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Identifying Shapes.json"; sourceTree = "<group>"; };
@@ -227,6 +227,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02864B092690A9BD000E3E48 /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				A13079C424AA447100722F90 /* OnboardingView.swift */,
+				A1AE103A248988520039F068 /* GameListView.swift */,
+				A1D90EB0249EC4A5004919BF /* LevelView.swift */,
+				A137C27024883D9D00BEC96D /* GameView.swift */,
+				A1D9ABD124ACC1C3002AEA7A /* SettingsView.swift */,
+			);
+			path = "UI Layer";
+			sourceTree = "<group>";
+		};
 		A109520C248B2DBE00234225 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,16 +293,12 @@
 		A137C2232487EEC800BEC96D /* MathForFun */ = {
 			isa = PBXGroup;
 			children = (
-				A13079C424AA447100722F90 /* OnboardingView.swift */,
-				A1AE103A248988520039F068 /* GameListView.swift */,
+				02864B092690A9BD000E3E48 /* UI Layer */,
 				A1D11F62248B0B35005674CF /* GameList.swift */,
-				A1D90EB0249EC4A5004919BF /* LevelView.swift */,
 				A17A8E8024C6216300C7467D /* Problem.swift */,
 				A11C286E248C4B320036D1AB /* GameSession.swift */,
 				A109520D248B2EF100234225 /* GameModel.swift */,
 				A1D90EAC249EC375004919BF /* PlayerLevel.swift */,
-				A137C27024883D9D00BEC96D /* GameView.swift */,
-				A1D9ABD124ACC1C3002AEA7A /* SettingsView.swift */,
 				A1D9ABD324ACC34B002AEA7A /* Games */,
 				A1D90EBA249FDACA004919BF /* Supporting Views */,
 				A109520C248B2DBE00234225 /* SupportingFiles */,
@@ -316,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				A137C23D2487EECA00BEC96D /* Info.plist */,
-				A13EA41C262CDF0600884CF8 /* GameModelTests.swift */,
+				02B3BA6C26924E11006987B1 /* GameSessionTests.swift */,
 			);
 			path = MathForFunTests;
 			sourceTree = "<group>";
@@ -548,7 +556,7 @@
 					};
 					A137C2362487EECA00BEC96D = {
 						CreatedOnToolsVersion = 11.5;
-						LastSwiftMigration = 1240;
+						LastSwiftMigration = 1250;
 						TestTargetID = A137C2202487EEC800BEC96D;
 					};
 					A137C2412487EECA00BEC96D = {
@@ -696,7 +704,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13EA41D262CDF0600884CF8 /* GameModelTests.swift in Sources */,
+				02B3BA6D26924E11006987B1 /* GameSessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,3 +11,12 @@ import Foundation
 protocol Problem {
     var rightAnswer: String { get }
 }
+
+
+protocol MyProblem {
+    associatedtype Value
+
+    var answer: Value { get }
+    var options: [Value] { get }
+    var questionText: String { get }
+}

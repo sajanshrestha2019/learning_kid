@@ -9,21 +9,17 @@
 import SwiftUI
 
 struct CardView: View {
-    
     let title: String
     
     var body: some View {
-        
         GeometryReader { geometry in
             ZStack {
-                
-                RoundedRectangle(cornerRadius: self.cornerRadius)
+                RoundedRectangle(cornerRadius: cornerRadius)
                     .fill(Color(#colorLiteral(red: 0, green: 0.9437479973, blue: 0.8790259957, alpha: 1)))
                 
-                Text(self.title)
+                Text(title)
                     .font(Font.system(size: min(geometry.size.width, geometry.size.height) * 0.50))
                     .foregroundColor(.black)
-                
             }
             .shadow(radius: 1.0)
         }

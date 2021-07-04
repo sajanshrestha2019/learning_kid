@@ -82,33 +82,24 @@ struct GameSession {
 
 
 extension GameSession {
-    
     private func answerCorrect(_ answer: String) -> Bool {
         problems[currentIndex].rightAnswer == answer
     }
     
     mutating func submitAnswer(with answer: String) -> Bool {
-        
         if answerCorrect(answer) {
-            
             score += 1
             return true
-        }
-            
-        else {
+        } else {
             return false
         }
     }
     
     mutating func incrementIndex() {
-        
         if currentIndex < problems.count - 1 {
             currentIndex += 1
-        }
-            
-        else {
+        } else {
             sessionCompleted = true
         }
     }
 }
-
